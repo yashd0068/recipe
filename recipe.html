@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe App</h1>
+        <div id="form-container">
+            <h2>Add/Edit Recipe</h2>
+            <form id="recipe-form">
+                <input type="hidden" id="recipe-id">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" required placeholder="Chocolate Cake">
+                
+                <label for="recipe-ingredients">Ingredients:</label>
+                <textarea id="recipe-ingredients" required placeholder="2 cups flour, 1 cup sugar, ..."></textarea>
+                
+                <label for="recipe-image">Image URL:</label>
+                <input type="text" id="recipe-image" required placeholder="https://example.com/image.jpg">
+                
+                <button type="submit">Save Recipe</button>
+            </form>
+        </div>
+        <div id="recipes-container">
+            <h2>Recipes</h2>
+            <div id="recipes-list"></div>
+        </div>
+    </div>
+    <script src="recipe.js"></script>
+</body>
+</html>
